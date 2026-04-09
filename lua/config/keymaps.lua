@@ -22,8 +22,6 @@ keymap("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 keymap("n", "<leader>sp", "<C-w>x", { desc = "Swap current window with the next" })
 keymap("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 keymap("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
--- keymap("n", ".", "<C-w>>", { desc = "Increase vertical split size" })
--- keymap("n", ",", "<C-w><", { desc = "Increase vertical split size" })
 
 -- Do tabs
 keymap("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
@@ -84,3 +82,13 @@ keymap({ "n", "x", "o" }, "<A-i>", function()
 		vim.lsp.buf.selection_range(-vim.v.count1)
 	end
 end)
+
+-- LSP
+
+keymap("n", "K", vim.lsp.buf.hover, { silent = true })
+keymap("n", "<leader>d", vim.diagnostic.open_float)
+keymap({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action)
+keymap("n", "gd", vim.lsp.buf.definition)
+keymap("n", "gsd", "<cmd>vsplit | lua vim.lsp.buf.definition()<CR>", { silent = true })
+keymap("n", "gD", vim.lsp.buf.declaration)
+keymap("n", "gsD", "<cmd>vsplit | lua vim.lsp.buf.declaration()<CR>", { silent = true })

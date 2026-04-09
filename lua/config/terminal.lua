@@ -61,9 +61,14 @@ end
 
 vim.keymap.set("n", "<leader>st", function()
   local ui = vim.api.nvim_list_uis()[1]
-  toggle_term({ dir = "botright split", height = 10, width = ui.width })
+  local count = 10
+  if vim.v.count > 0 then count = vim.v.count end
+  toggle_term({ dir = "botright split", height = count, width = ui.width })
 end, { desc = "open terminal at bottom of screen" })
+
 vim.keymap.set("n", "<leader>sv", function()
   local ui = vim.api.nvim_list_uis()[1]
-  toggle_term({ dir = "botright vsplit", height = ui.height, width = math.floor(ui.width * 0.3 )})
+  local count = math.floor(ui.width * 0.3)
+  if vim.v.count > 0 then count = vim.v.count end
+  toggle_term({ dir = "botright vsplit", height = ui.height, width = count})
 end, { desc = "open terminal on right side of screen" })

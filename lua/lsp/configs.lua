@@ -46,7 +46,7 @@ vim.lsp.config("clangd", {
 })
 vim.lsp.config("zls", {
   cmd = { "zls" },
-  filetypes = { "zig", "zir", "zoof" },
+  filetypes = { "zig", "zir" },
   root_markers = { "build.zig" },
 })
 vim.lsp.config("gopls", {

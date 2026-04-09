@@ -27,6 +27,8 @@ vim.pack.add({
   -- AUTOCOMPLETE
   { src = "https://github.com/saghen/blink.cmp", version = vim.version.range('1.x') },
   -- UI
+  { src = "https://github.com/stevearc/oil.nvim" },
+  { src = "https://github.com/malewicz1337/oil-git.nvim" },
   { src = "https://github.com/folke/snacks.nvim" },
   { src = "https://github.com/akinsho/bufferline.nvim" },
   { src = "https://github.com/nvim-lualine/lualine.nvim" },

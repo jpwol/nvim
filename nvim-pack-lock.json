@@ -67,7 +67,11 @@
     },
     "nvim-lspconfig": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "rev": "c588db330592fa477a70d2fee6ba20a57194bdc3",
+=======
+      "rev": "fb5fa30626ae10f7f79f740059d3769993936ecb",
+>>>>>>> Stashed changes
 =======
       "rev": "fb5fa30626ae10f7f79f740059d3769993936ecb",
 >>>>>>> Stashed changes
@@ -79,7 +83,11 @@
     },
     "nvim-web-devicons": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "rev": "6e76c5e47e957fbf080b1fdac165c66dbd2e7cfb",
+=======
+      "rev": "95b7a002d5dba1a42eb58f5fac5c565a485eefd0",
+>>>>>>> Stashed changes
 =======
       "rev": "95b7a002d5dba1a42eb58f5fac5c565a485eefd0",
 >>>>>>> Stashed changes

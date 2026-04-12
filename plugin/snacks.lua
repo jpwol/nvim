@@ -2,10 +2,10 @@ require("snacks").setup({
 	bigfile = { enabled = true },
 	dashboard = { enabled = false },
 	-- explorer = { enabled = true },
-	-- indent = {
-	-- 	enabled = true,
-	-- 	animate = { enabled = false },
-	-- },
+	indent = {
+		enabled = true,
+		animate = { enabled = false },
+	},
 	input = { enabled = true },
 	picker = {
 		enabled = true,

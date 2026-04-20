@@ -5,6 +5,9 @@ require("snacks").setup({
 	indent = {
 		enabled = true,
 		animate = { enabled = false },
+    scope = {
+      char = "┃",
+    },
 	},
 	input = { enabled = true },
 	picker = {

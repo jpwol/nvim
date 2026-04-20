@@ -45,9 +45,9 @@ vim.lsp.config("clangd", {
   },
 })
 vim.lsp.config("zls", {
-  cmd = { "/home/josh/.zig/zls/zig-out/bin/zls" },
+  cmd = { "zls" },
   filetypes = { "zig", "zir" },
-  root_markers = { "build.zig" },
+  root_markers = { "build.zig", "build.zig.zon" },
 })
 vim.lsp.config("gopls", {
   cmd = { "gopls" },

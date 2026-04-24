@@ -92,3 +92,6 @@ keymap("n", "gd", vim.lsp.buf.definition)
 keymap("n", "gsd", "<cmd>vsplit | lua vim.lsp.buf.definition()<CR>", { silent = true })
 keymap("n", "gD", vim.lsp.buf.declaration)
 keymap("n", "gsD", "<cmd>vsplit | lua vim.lsp.buf.declaration()<CR>", { silent = true })
+
+keymap("t", "<C-j>", "j", { desc = "Remap for lazygit"})
+keymap("t", "<C-k>", "k", { desc = "Remap for lazygit"})

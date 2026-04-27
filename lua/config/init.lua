@@ -45,4 +45,4 @@ vim.pack.add({
   { src = 'https://github.com/lewis6991/gitsigns.nvim' },
 })
 
-vim.cmd[[colorscheme thorn]]
+-- vim.cmd[[colorscheme thorn]]

@@ -8,7 +8,7 @@ require('vim._core.ui2').enable({msg={target='cmd'}})
 
 vim.pack.add({
   -- THEMES
-  { src = "https://github.com/jpwol/thorn.nvim" },
+  { src = "https://github.com/jpwol/thorn.nvim", version = "refactor/theme-change" },
   { src = "https://github.com/folke/tokyonight.nvim" },
   { src = "https://github.com/shaunsingh/nord.nvim" },
   { src = "https://github.com/everviolet/nvim.git", name = 'everviolet' },

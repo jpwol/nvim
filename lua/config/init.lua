@@ -3,12 +3,11 @@ require("config.options")
 require("config.terminal")
 require("config.plugins")
 
-
-require('vim._core.ui2').enable({msg={target='cmd'}})
+require('vim._core.ui2').enable({ msg = { target='cmd' } })
 
 vim.pack.add({
   -- THEMES
-  { src = "https://github.com/jpwol/thorn.nvim", version = "refactor/theme-change" },
+  { src = "https://github.com/jpwol/thorn.nvim" },
   { src = "https://github.com/folke/tokyonight.nvim" },
   { src = "https://github.com/shaunsingh/nord.nvim" },
   { src = "https://github.com/everviolet/nvim.git", name = 'everviolet' },
@@ -43,6 +42,8 @@ vim.pack.add({
   { src = "https://github.com/selimacerbas/live-server.nvim" },
   -- GIT
   { src = 'https://github.com/lewis6991/gitsigns.nvim' },
+
+  { src = "https://github.com/brenoprata10/nvim-highlight-colors.git" },
 })
 
--- vim.cmd[[colorscheme thorn]]
+require("nvim-highlight-colors").setup({})

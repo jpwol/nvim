@@ -40,7 +40,7 @@ vim.pack.add({
   { src = "https://github.com/selimacerbas/live-server.nvim" },
   -- GIT
   { src = 'https://github.com/lewis6991/gitsigns.nvim' },
-
+  -- ETC
   { src = "https://github.com/brenoprata10/nvim-highlight-colors.git" },
 })
 

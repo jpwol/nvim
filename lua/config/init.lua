@@ -11,6 +11,7 @@ vim.pack.add({
   { src = "https://codeberg.org/evergarden/nvim.git", name = 'evergarden' },
   -- TREESITTER
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter-context" },
   -- LSP
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/mason-org/mason.nvim" },

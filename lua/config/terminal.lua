@@ -66,7 +66,7 @@ vim.keymap.set("n", "<leader>st", function()
   toggle_term({ dir = "botright split", height = count, width = ui.width })
 end, { desc = "open terminal at bottom of screen" })
 
-vim.keymap.set("n", "<leader>sv", function()
+vim.keymap.set("n", "<leader>sr", function()
   local ui = vim.api.nvim_list_uis()[1]
   local count = math.floor(ui.width * 0.3)
   if vim.v.count > 0 then count = vim.v.count end

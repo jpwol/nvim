@@ -49,3 +49,8 @@ vim.pack.add({
 })
 
 require("nvim-highlight-colors").setup({})
+require("jupynvim").setup({
+  log_level = "info",
+  image_renderer = "kitty"
+})
+

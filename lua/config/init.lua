@@ -9,6 +9,7 @@ vim.pack.add({
   -- THEMES
   { src = "https://github.com/jpwol/thorn.nvim" },
   { src = "https://codeberg.org/evergarden/nvim.git", name = 'evergarden' },
+  { src = "https://github.com/sainnhe/gruvbox-material.git" },
   -- TREESITTER
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter-context" },

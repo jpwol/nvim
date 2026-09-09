@@ -44,6 +44,8 @@ vim.pack.add({
   { src = 'https://github.com/lewis6991/gitsigns.nvim' },
   -- ETC
   { src = "https://github.com/brenoprata10/nvim-highlight-colors.git" },
+
+  { src = "https://github.com/sheng-tse/jupynvim.git" },
 })
 
 require("nvim-highlight-colors").setup({})

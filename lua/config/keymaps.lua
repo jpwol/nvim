@@ -98,5 +98,5 @@ keymap("t", "<C-k>", "k", { desc = "Remap for lazygit"})
 
 -- Spell
 keymap("n", "<m-s>", function()
-    vim.o.spell = !vim.o.spell
+    vim.o.spell = not vim.o.spell
 end)

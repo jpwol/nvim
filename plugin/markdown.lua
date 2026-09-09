@@ -4,3 +4,9 @@ require('markdown_preview').setup({
   open_browser = true,
   debounce_ms = 300,
 })
+
+require('render-markdown').setup({
+  latex = {
+    enabled = true,
+  },
+})

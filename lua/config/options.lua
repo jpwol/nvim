@@ -58,3 +58,15 @@ vim.api.nvim_create_autocmd("TermOpen", {
 		opt.relativenumber = false
 	end,
 })
+
+vim.api.nvim_create_user_command("DeletePluginOrphans", function()
+  vim.pack.del(
+    vim.iter(vim.pack.get())
+    :filter(function(x)
+      return not x.active
+    end)
+    :map(function(x)
+      return x.spec.name
+    end)
+    :totable())
+end, {})

@@ -9,7 +9,7 @@ conform.setup({
 		jsonc = { "prettier" },
 		css = { "prettier" },
 		html = { "prettier" },
-		markdown = { "prettier" },
+		markdown = { "mdformat" },
 		-- lua = { "stylua" },
 		python = { "black" },
 		c = {},

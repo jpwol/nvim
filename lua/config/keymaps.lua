@@ -95,3 +95,8 @@ keymap("n", "gsD", "<cmd>vsplit | lua vim.lsp.buf.declaration()<CR>", { silent =
 
 keymap("t", "<C-j>", "j", { desc = "Remap for lazygit"})
 keymap("t", "<C-k>", "k", { desc = "Remap for lazygit"})
+
+-- Spell
+keymap("n", "<m-s>", function()
+    vim.o.spell = !vim.o.spell
+end)

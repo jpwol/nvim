@@ -27,40 +27,38 @@ require('mason').setup({
 require('mason-lspconfig').setup({
   automatic_enable = true,
   ensure_installed = {
+    "clangd",       -- C/C++
+    "zls",          -- Zig
+    "gopls",        -- Go
+    "lua_ls",       -- Lua
+    "basedpyright", -- Python
+    "jdtls",        -- Java
+    "bashls",       -- Bash/Zsh
+    "vtsls",        -- JS/TS
     "html",
     "cssls",
     "jsonls",
-    "lua_ls",
-    "eslint",
-    "basedpyright",
-    "clangd",
-    "zls",
-    "bashls",
     "cmake",
     "texlab",
-    "gopls",
-    "jdtls",
     "marksman",
     "taplo",
     "glsl_analyzer",
     "rust_analyzer",
     "sqls",
-    "vue_ls",
-    "vtsls",
   },
 })
 
 require("mason-tool-installer").setup({
   ensure_installed = {
-    "prettier", -- prettier formatter
-    "jsonlint",
-    "stylua", -- lua formatter
-    "black",    -- python formatter
-    "pylint",   -- python linter
-    "debugpy",  -- python debugger
-    "luacheck", -- lua linter
-    -- "cpplint", -- c, c++ linter
-    "codelldb", -- c, c++, rust, zig debugger
+    "prettier",   -- prettier formatter
+    "mdformat",   -- Markdown formatter
+    "jsonlint",   -- json linter
+    "stylua",     -- lua formatter
+    "black",      -- python formatter
+    "pylint",     -- python linter
+    "debugpy",    -- python debugger
+    "luacheck",   -- lua linter
+    "codelldb",   -- c, c++, rust, zig debugger
     "cmakelang",
     "cmakelint",
     "trivy",

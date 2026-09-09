@@ -19,7 +19,7 @@ keymap("n", "<leader>nh", "<cmd>nohl<CR>")
 -- Do splits
 keymap("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 keymap("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
-keymap("n", "<leader>sp", "<C-w>x", { desc = "Swap current window with the next" })
+keymap("n", "<leader>sw", "<C-w>x", { desc = "Swap current window with the next" })
 keymap("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 keymap("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 

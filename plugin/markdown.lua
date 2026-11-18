@@ -1,4 +1,4 @@
-require('markdown_preview').setup({
+require('mdkite').setup({
   instance_mode = "takeover",
   port = 0,
   open_browser = true,
